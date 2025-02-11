@@ -7,7 +7,7 @@ supported Gumstix products.
 **Note:**
 If you already have a Yocto Project setup and want only the Gumstix BSP layer, 
 use the meta-gumstix repository found here: 
-git://github.com/gumstix/meta-gumstix.git.
+https://github.com/gumstix/meta-gumstix.git.
 ***
 
 The Yocto Project allows the creation of custom linux distributions for embedded
@@ -50,7 +50,7 @@ Create an empty directory to hold your working files:
 
 Tell Repo where to find the manifest:
 
-    $ repo init -u git://github.com/gumstix/yocto-manifest.git -b <branch>
+    $ repo init -u https://github.com/anurag3301/yocto-manifest.git -b <branch>
 
 A successful initialization will end with a message stating that Repo is
 initialized in your working directory. Your directory should now
@@ -69,7 +69,7 @@ particular commits.
 
 To test out the bleeding edge, type:
 
-    $ repo init -u git://github.com/gumstix/yocto-manifest.git -b morty
+    $ repo init -u https://github.com/anurag3301/yocto-manifest.git -b morty
     $ repo sync
 
 Note that the default settings for bblayers.conf and local.conf may change
@@ -80,14 +80,14 @@ directory for any corresponding changes needed to the settings in
 
 To get back to the known stable version, type:
 
-    $ repo init -u git://github.com/gumstix/yocto-manifest.git -b fido
+    $ repo init -u https://github.com/anurag3301/yocto-manifest.git -b fido
     $ repo sync
 
 Also you can get a specific version of Yocto Project:
 
 For example,
 
-    $ repo init -u git://github.com/gumstix/yocto-manifest.git -b refs/tags/danny
+    $ repo init -u https://github.com/anurag3301/yocto-manifest.git -b refs/tags/danny
     
 To learn more about repo, look at [Repo Command Reference](https://source.android.com/source/using-repo "Using repo")
 ***
@@ -228,7 +228,7 @@ repositories and branches or pull in additional meta-layers.
 
 Clone this repository (or fork it on github):
 
-    $ git clone git://github.com/gumstix/yocto-manifest.git
+    $ git clone https://github.com/anurag3301/yocto-manifest.git
 
 Make your changes (and contribute them back if they are generally useful), and
 then re-initialize your repo client
@@ -238,4 +238,4 @@ then re-initialize your repo client
 
 Additional Resources
 --------------------
-Please checkout [Gumstix Yocto Project Wiki](https://github.com/gumstix/yocto-manifest/wiki) for tips on building and using the Gumstix images.
+Please checkout [Gumstix Yocto Project Wiki](https://github.com/anurag3301/yocto-manifest/wiki) for tips on building and using the Gumstix images.
